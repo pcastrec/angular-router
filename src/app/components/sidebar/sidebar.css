@@ -1,0 +1,39 @@
+.sidebar {
+    padding: 1em;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #050689;
+
+    h2 {
+        color: #FAFAFA;
+    }
+
+    ul {
+        gap: 1em;
+        display: flex;
+        padding: 1em 0 0 0;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        flex: 1;
+        display: flex;
+        color: #BEBEBE;
+        padding: 0.25em;
+        text-decoration: none;
+        justify-content: space-evenly;
+    }
+}
+
+.active,
+a:hover {
+    background-color: #00000050;
+    border-radius: 1em;
+    padding: 0.25em;
+}

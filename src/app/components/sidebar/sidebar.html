@@ -1,0 +1,17 @@
+<aside class="sidebar">
+    <h2>Dashboard.</h2>
+
+    <nav>
+        <ul>
+            @for(item of items; track item.route) {
+                <li>
+                    <a [routerLink]="item.route" routerLinkActive="active"
+                    [routerLinkActiveOptions]="{exact: true}">
+                        <span>{{ item.icon }}</span>
+                        <span>{{ item.label }}</span>
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</aside>

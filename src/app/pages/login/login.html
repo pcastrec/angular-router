@@ -1,0 +1,16 @@
+<h2>Formulaire</h2>
+
+<form (submit)="submit($event)">
+    <p>
+        <label for="email">Email</label>
+        <input id="email" type="email" [formField]="formulaire.email">
+    </p>
+    <p>
+        <label for="password">Password</label>
+        <input id="password" type="password" [formField]="formulaire.password">
+    </p>
+    <button type="submit" [disabled]="formulaire().invalid()">Envoyer</button>
+</form>
+@if(error) {
+<p>{{error}}</p>
+}
