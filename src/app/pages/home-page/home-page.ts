@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
   templateUrl: './home-page.html',
 })
 export class HomePage implements OnInit {
+  
   private service = inject(AuthService)
   private http = inject(HttpClient)
 
